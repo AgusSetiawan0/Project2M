@@ -12,7 +12,7 @@
         </ul>
       </div>
     @endif
-
+    
     <form method="POST" action="/projects/{{$project->id}}" enctype="multipart/form-data">
 
       <div class="form-group row">
