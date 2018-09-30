@@ -125,7 +125,6 @@ class ProjectController extends Controller
 
         $project = Project::findOrFail($id);
         $fileName = time() . '.png';
-        $request->file('featured_image')->storeAs('public/gambar', $fileName);
         if($project->isOwner()){
             $project->update([
                 'judul' => $request['judul'],
