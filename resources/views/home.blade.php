@@ -14,7 +14,14 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!</br>
+                    
+                    @if (auth()->user()->isAdmin())
+                    <a href="{{ url('/admin') }}">Ke Page Admin</a></br>
+                    <a href="{{ url('/topups') }}">Approve User Top Up</a>
+                    @else
+                    <a href="{{ url('/topups/create') }}">Isi Saldo</a>
+                    @endif
                 </div>
             </div>
         </div>
