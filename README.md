@@ -1,2 +1,2 @@
 # Project2M
-HI, Semua, kalian k***
+HI guys, balik lagi dengan project 2M
